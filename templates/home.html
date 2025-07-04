@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to MedTrack</title>
+</head>
+<body>
+  <div class="navbar">
+    <h1>🩺 MedTrack</h1>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <div class="nav-links">
+      <a href="{{ url_for('register') }}">Sign Up</a>
+      <a href="{{ url_for('login') }}">Log In</a>
+      <a href="{{ url_for('about') }}">About Us</a>
+      <a href="{{ url_for('contact') }}">Contact Us</a>
+    </div>
+  </div>
+  <form></form>
+
+  <div class="hero">
+    <h2>Stay Connected to Your Care</h2>
+    <p>One platform for all your medical needs — safe, simple, and accessible.</p>
+    <a href="{{ url_for('register') }}" class="cta-button">Begin Your Journey</a>
+    <a href="{{ url_for('login') }}" class="cta-button">Already have an account</a>
+  </div>
+  <h2 style="text-align:center;">🔷 What Can You Do with MedTrack?</h2>
+<div class="medtrack-uses">
+  <div class="use-card">
+    <h3>📋 Track Medications</h3>
+    <p>Add and manage your prescriptions, dosage, and schedules in one place.</p>
+  </div>
+  <div class="use-card">
+    <h3>⏰ Set Reminders</h3>
+    <p>Get notified when it’s time to take your medicines.</p>
+  </div>
+  <div class="use-card">
+    <h3>📈 Monitor History</h3>
+    <p>View your medication history to track your progress over time.</p>
+  </div>
+  <div class="use-card">
+    <h3>🧾 Store Records</h3>
+    <p>Safely keep doctor prescriptions and medical records for future reference.</p>
+  </div>
+</div>
+
+  
+</body>
+</html>
