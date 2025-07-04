@@ -4,7 +4,6 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import uuid
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'
 
 # --- AWS Setup ---
 dynamodb = boto3.resource('dynamodb', region_name='us-east-1')
