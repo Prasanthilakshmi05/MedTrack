@@ -215,4 +215,4 @@ def patient_details():
     return render_template('patient_details.html', patient=user)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,host='0.0.0.0',port=5000)
